@@ -1,0 +1,19 @@
+<div class="icon">
+  <h1>bon_92</h1>
+  <h2>管理画面</h2>
+</div>
+
+  <% @posts.each do|post| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><%= post.title %></h5>
+        <%= link_to("削除", "/posts/#{post.id}/destroy", {method: "post"}) %>
+
+        <div class="d-flex">
+          <%= link_to("詳細", "/posts/#{post.id}", class: 'btn btn-outline-primary') %>
+        </div>
+      </div>
+    </div>
+    
+  <% end %>
+
