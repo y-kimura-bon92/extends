@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-main {
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/image/asi.jpg");
+}
+@media screen and (max-width: 780px) {
+  .top-main {
+    background-image: url("/image/asi-2.jpg");
+  }
+}
+
+.main-content h3 {
+  padding-top: 150px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: fantasy;
+}
+
+.main-content h2 {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.live {
+  color: white;
+}
+
+.by-yk {
+  font-family: cursive;
+}
